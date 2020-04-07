@@ -14,7 +14,6 @@ body {
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
   width: 100%;
-  height: 100%;
   font-size: 1em;
   background: url("../img/background.jpg");
   background-size: cover;
@@ -28,8 +27,8 @@ main {
   display: grid;
   -ms-grid-rows: (1fr)[3];
       grid-template-rows: repeat(3, 1fr);
-  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  -ms-grid-columns: (minmax(10rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
       grid-template-areas: "title title" "tagline tagline" "social icons";
 }
 
@@ -61,8 +60,8 @@ h2 {
   grid-area: icons;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(10rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  -ms-grid-columns: (minmax(5rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
 }
 
 .icon {

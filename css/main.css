@@ -1,0 +1,71 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  height: 100%;
+  font-size: 1em;
+  background: url("../img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+main {
+  padding-top: 25vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+      grid-template-areas: "title title" "tagline tagline" "social icons";
+}
+
+h1 {
+  padding-top: 10vh;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: title;
+}
+
+h2 {
+  padding-top: 2vh;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: tagline;
+}
+
+.social {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: social;
+}
+
+.icons {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: icons;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(10rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+.icon {
+  width: 2em;
+  height: 2em;
+}
